@@ -4,7 +4,6 @@ Here will be all the global styles for the project:
 fonts, font-sizes, global variables etc.
 */
 
-
 /* FONTS */
 
 /* fonts.google.com -> search ->
@@ -13,82 +12,85 @@ RALEWAY -> 400 + 500 + 600
 -> use on the web -> @import -> copy 'import' link ... */
 
 /* Importing selected Google fonts in my project */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Raleway:wght@400;500;600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Raleway:wght@400;500;600&display=swap");
 
 /* VARIABLES */
 
 :root {
-	--green-1: #26643b;
-	--green-2: #a2de96;
-	--lightGreen-1: #d6e5d8;
-	--lightGreen-2: #f5fcf4;
-	--black-1: #3b413a;
-	--black-2: #3f3c3c;
-	--black-3: #5b6359;
-	--white-1: #e8e8e8;
+  --green-1: #26643b;
+  --green-2: #a2de96;
+  --lightGreen-1: #d6e5d8;
+  --lightGreen-2: #f5fcf4;
+  --black-1: #3b413a;
+  --black-2: #3f3c3c;
+  --black-3: #5b6359;
+  --white-1: #e8e8e8;
 }
-
 
 /* Setting styles for elements we will use globally in our project */
 
 html {
-    /* 10px as a counterpoint because i will use 'rem' and 'em' and it will be much easier to calculate */
-    font-size: 10px; 
-    /* we don't want our horizontal scrollbar because i will add menu etc. witch will go outside viewpoint and i don't want that */
-    overflow-x: hidden;
+  /* 10px as a counterpoint because i will use 'rem' and 'em' and it will be much easier to calculate */
+  font-size: 10px;
+  /* we don't want our horizontal scrollbar because we will add Mobile Menu etc. witch will go outside viewport(viewable screen) if scrollbar is enabled and we don't want that */
+  overflow-x: hidden;
 }
 
 body {
-    background-color: var(--lightGreen-2);
-    /* we don't want our horizontal scrollbar because i will add menu etc. witch will go outside viewpoint and i don't want that */
-    overflow-x: hidden;
+  background-color: var(--lightGreen-2);
+  /* we don't want our horizontal scrollbar because we will add Mobile Menu etc. witch will go outside viewport(viewable screen) if scrollbar is enabled and we don't want that */
+  /* overflow-x: hidden; style will be added by JS when we open the Mobile Menu nav bar + visibility: visible, height: 100vh, width: 100vw */
+  overflow-x: hidden;
 }
 
 /* everything (every component) in my website will be in 'section' and for each section padding will be '100px 0' to have a decent gap (100+100=200px) between them */
 section {
-    /* padding always 100px for the top and bottom and 0 for the left and right */
-    padding: 100px 0;
+  /* padding always 100px for the top and bottom and 0 for the left and right */
+  padding: 100px 0;
 }
 
 /* MEDIA QUERIES */
 /* this media query is created to reduce section padding (to 50+50=100) on smaller devices */
-@media only screen and (max-width: 768px){
-    section {
-        padding: 50px 0;
-    }
+@media only screen and (max-width: 768px) {
+  section {
+    padding: 50px 0;
+  }
 }
 
 /* all the content in website will have 5% gap on each side and centered with margin: 0 auto to make it look better by wrapping everything with container */
 .container {
-    /* on large devices the content will remain under 1200px wide even if it is zoomed out */
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto;
+  /* on large devices the content will remain under 1200px wide even if it is zoomed out */
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  /* fitting image in its full size into parent container */
+  object-fit: contain;
 }
 
 /* all headings' font-family - Poppins */
-h1, h2, h3, h4 {
-    font-family: 'Poppins, sans-serif';
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
 }
 
 /* all paragraphs' font-family - Raleway */
 p {
-    font-family: 'Raleway, sans-serif';
-    font-weight: 400;
-    line-height: 1.4em;
-    /* 1.8rem = 10px(as we defined earlier)*1.8=18px */
-    font-size: 1.8rem
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  line-height: 1.4em;
+  /* 1.8rem = 10px(as we defined earlier)*1.8=18px */
+  font-size: 1.8rem;
 }
 
 a {
-    /* allows to set a width and height on the element. Also, with display: inline-block , the top and bottom margins/paddings are respected, but with display: inline they are not. */
-    display: inline-block;
-    text-decoration: none;
+  /* allows to set a width and height on the element. Also, with display: inline-block , the top and bottom margins/paddings are respected, but with display: inline they are not. */
+  display: inline-block;
+  text-decoration: none;
 }

@@ -1,23 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Title of the home page -->
     <title>Home | Shaif's Cuisine</title>
     <!-- Linking CSS files -->
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./globalStyles.css">
-    <link rel="stylesheet" href="./components.css">
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./globalStyles.css" />
+    <link rel="stylesheet" href="./components.css" />
     <!-- Scroll Animation Library - AOS - Animate On Scroll (https://michalsnik.github.io/aos/) -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-</head>
-<body>
+  </head>
+  <body>
+    <!-- NAV Section -->
+    <div class="nav">
+      <div class="container">
+        <div class="nav__wrapper">
+          <a href="./index.html" class="logo">
+            <img src="./images/logo.svg" alt="Shaif's Cuisine" />
+          </a>
+          <nav>
+            <!-- Hamburger Icon (from feathericons.com -> GitHub repo -> folder icons -> search 'menu' -> click on icon.svg -> code -> copy code) -->
+            <div class="nav__icon__open">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="3" y1="12" x2="21" y2="12" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <line x1="3" y1="18" x2="21" y2="18" />
+              </svg>
+            </div>
+            <!-- Navigation Background Overlay for Mobile View Navigation - the dark semi-transparent background behind Mobile Menu-->
+            <div class="nav__bg__overlay"></div>
+            <!-- Navigation List Items -->
+            <ul class="nav__list">
+              <!-- Close Icon (from feathericons.com -> GitHub repo -> folder 'icons' -> search 'X' -> click on x.svg -> code -> copy code) -->
+              <div class="nav__icon__close">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              </div>
+              <div class="nav__list__wrapper">
+                <li><a href="./index.html" class="nav__link">Home</a></li>
+                <li><a href="./menu.html" class="nav__link">Menu</a></li>
+                <li><a href="./about.html" class="nav__link">About</a></li>
+                <li><a href="./contact.html" class="nav__link">Contact</a></li>
+                <li>
+                  <a href="./booking.html" class="btn primary-btn"
+                    >Book Table</a
+                  >
+                </li>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- End NAV Section -->
     <h1>This is Home Page</h1>
-
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error non
+      doloremque tempora autem cum earum. Eveniet ad vero, quasi id ex dolorem
+      nesciunt explicabo esse praesentium, quos, aliquid ratione numquam
+      blanditiis ab enim. Ex, adipisci quia? Sunt, fugit repellendus minus
+      minima illum deleniti quibusdam deserunt eum inventore consequatur,
+      obcaecati itaque ea, ipsum excepturi at quam ipsam fuga libero. Dolores
+      suscipit architecto nihil ducimus, magni minus quae ad. Fuga animi,
+      suscipit excepturi facere, accusamus autem sint, praesentium quis
+      dignissimos cupiditate consectetur libero eos dolor ab enim eligendi
+      corporis reiciendis! Vitae officia sed consequatur excepturi, recusandae
+      temporibus ullam quidem sequi explicabo placeat iste! Tenetur, aliquam est
+      facere nam aliquid enim! Ratione, nihil exercitationem? Iure sapiente non,
+      recusandae voluptatem illo odio vitae atque sequi, delectus libero,
+      ratione explicabo aliquid a similique qui harum? Consequuntur minus veniam
+      repellat soluta nobis ex, blanditiis fugit. Odit deserunt exercitationem,
+      tenetur assumenda nobis perspiciatis amet, tempora id doloremque corporis
+      itaque at labore consequatur. Fuga quia, harum libero beatae fugit atque a
+      ab, iusto sapiente optio recusandae temporibus culpa enim ratione sint!
+      Soluta ratione distinctio cumque aut voluptatem hic temporibus fugiat
+      obcaecati quos eum in, expedita porro blanditiis dolore 
+    </p>
 
     <!-- Scroll Animation Library - AOS - Animate On Scroll script -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-</body>
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+    <!-- Custom JavaScript -->
+    <script src="./main.js"></script>
+  </body>
 </html>

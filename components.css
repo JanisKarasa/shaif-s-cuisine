@@ -1,0 +1,159 @@
+/* COMPONENTS' STYLES */
+/* 
+Here will be some styles of elements/components which will be reused multiple times inside the projects:
+menu bar, footer elements and 3 contact elements (Opening Hours, Address, Call Now) etc.
+And for that we use components.css file
+*/
+
+/* 1. NAV STYLES */
+
+.nav {
+  padding: 2rem 0;
+}
+
+/* we hide nav icons and nav background overlay for Desktop View Layout and use them for Mobile View Layout */
+.nav__icon__open,
+.nav__icon__close,
+.nav__bg__overlay {
+  display: none;
+}
+
+.nav__wrapper {
+  display: flex;
+  /* make a space between nav icon and nav items */
+  justify-content: space-between;
+}
+
+.nav__list li {
+  /* putting nav list items in the row and giving them top and bottom margins */
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+/* styling nav list items */
+.nav__list .nav__link {
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--black-2);
+  padding: 0.5rem;
+}
+
+/* changing nav list items' color on hover */
+.nav__link:hover {
+  color: var(--green-1);
+}
+/* OR use the CSS logic - If you hover on nav__list's 'li' item then nav__link change color to '--green-1' */
+/* .nav__list li:hover .nav__link {
+    color: var(--green-1);
+} */
+
+/* 3. MOBILE NAVIGATION */
+
+/* when we are inside 768px frame (on smaller devices) there will be a different style applied */
+@media only screen and (max-width: 768px) {
+  /* Styling Navigation Icons */
+  /* setting nav container as a relative to set and position Nav List Items (.nav__list)
+  and nav icons on the top of each other in top-right corner */
+  .nav {
+    position: relative;
+  }
+  .nav__icon__open {
+    /* getting Hamburger Icon visible */
+    display: block;
+  }
+  .nav__icon__open svg,
+  .nav__icon__close svg {
+    /* pointer will not change on hovering over the icon */
+    pointer-events: none;
+    /* size of the icon */
+    height: 30px;
+    width: 30px;
+  }
+  .nav__icon__close {
+    display: block;
+    /* absolute because nav__icon__close will be on/with Mobile Menu under hamburger/open icon */
+    position: absolute;
+    color: var(--black-1);
+    /* positioning the icon on the top-right corner */
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+  }
+  /* Styling Navigation List Items - Nav Overlay */
+  .nav__list {
+    /* Positioning Navigation List Items on the top layer of whole website so nothing will not interfere with the menu */
+    z-index: 1000;
+    /* position absolute to be able to manipulate (hide, show and position) nav__list container */
+    position: absolute;
+    /* hiding nav__list/Mobile Menu on the right so later with 'transform: translateX(-100%);' in '.nav__list.show {...}'
+    we show nav__list/Mobile Menu again with JS eventListener */
+    left: 100%;
+    top: 0;
+    /* stretching Mobile Menu all the way vertically */
+    height: 100vh;
+    width: 80%;
+    background-color: var(--lightGreen-1);
+    display: flex;
+    align-items: center;
+    /* keeping nav list items block to the right side */
+    justify-content: flex-end;
+    padding-right: 2rem;
+    /* translate 0 for initial state so later we can change it to -100% in order to show nav__list/Mobile Menu with JS eventListener */
+    transform: translateX(0%);
+    /* overflow: hidden; */
+    transition: 0.3s ease-in transform;
+  }
+  .nav__list.show {
+    /* we  change it to -100% in order to show nav__list/Mobile Menu with JS eventListener by adding 'show' class to html element next to 'nav__list' class */
+    transform: translateX(-100%);
+  }
+  .nav__list li {
+    /* in Desktop View we had 'inline-block' so they can be aligned in a row,
+    in Mobile View we go to 'block' so they can be aligned in a column */
+    display: block;
+    text-align: right;
+    margin-bottom: 2rem;
+  }
+  .nav__list a {
+    font-size: 1.6rem;
+  }
+  .nav__bg__overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    height: 100vh;
+    width: 100%;
+    background: rgba(18, 24, 14, 0.808);
+    /* display none initial state so later we can change it to block in order to show background overlay under Mobile Menu with JS eventListener */
+    display: none;
+  }
+  /* changing display to block in order to make background overlay visible with JS eventListener by adding 'active' class to html element next to 'nav__bg__overlay' class */
+  .nav__bg__overlay.active {
+    display: block;
+  }
+}
+
+/* 2. GLOBAL BUTTON STYLE */
+
+.btn {
+  color: var(--green-1);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  padding: 1.2rem 2rem;
+}
+
+.primary-btn {
+  color: var(--white-1);
+  background-color: var(--green-1);
+}
+
+/* changing button size on smaller screen view */
+@media only screen and (min-width: 768px) {
+  .btn {
+    padding: 1.3rem 2rem;
+    font-size: 2rem;
+  }
+}
