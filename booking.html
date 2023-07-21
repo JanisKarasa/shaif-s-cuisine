@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the home page -->
+    <title>Booking | Shaif's Cuisine</title>
+    <!-- Linking CSS files -->
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./globalStyles.css" />
+    <link rel="stylesheet" href="./components.css" />
+    <!-- Scroll Animation Library - AOS - Animate On Scroll (https://michalsnik.github.io/aos/) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- NAV Section -->
+    <div class="nav">
+      <div class="container">
+        <div class="nav__wrapper">
+          <a href="./index.html" class="logo">
+            <img src="./images/logo.svg" alt="Shaif's Cuisine" />
+          </a>
+          <nav>
+            <!-- Hamburger Icon (from feathericons.com -> GitHub repo -> folder icons -> search 'menu' -> click on icon.svg -> code -> copy code) -->
+            <div class="nav__icon__open">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="3" y1="12" x2="21" y2="12" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <line x1="3" y1="18" x2="21" y2="18" />
+              </svg>
+            </div>
+            <!-- Navigation Background Overlay for Mobile View Navigation - the dark semi-transparent background behind Mobile Menu-->
+            <div class="nav__bg__overlay"></div>
+            <!-- Navigation List Items -->
+            <ul class="nav__list">
+              <!-- Close Icon (from feathericons.com -> GitHub repo -> folder 'icons' -> search 'X' -> click on x.svg -> code -> copy code) -->
+              <div class="nav__icon__close">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              </div>
+              <div class="nav__list__wrapper">
+                <li><a href="./index.html" class="nav__link">Home</a></li>
+                <li><a href="./menu.html" class="nav__link">Menu</a></li>
+                <li><a href="./about.html" class="nav__link">About</a></li>
+                <li><a href="./contact.html" class="nav__link">Contact</a></li>
+                <li>
+                  <a href="./booking.html" class="btn primary-btn"
+                    >Book Table</a
+                  >
+                </li>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- End NAV Section -->
+
+    <h1>This is Booking Page</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error non
+      doloremque tempora autem cum earum. Eveniet ad vero, quasi id ex dolorem
+      nesciunt explicabo esse praesentium, quos, aliquid ratione numquam
+      blanditiis ab enim. Ex, adipisci quia? Sunt, fugit repellendus minus
+      minima illum deleniti quibusdam deserunt eum inventore consequatur,
+      obcaecati itaque ea, ipsum excepturi at quam ipsam fuga libero. Dolores
+      suscipit architecto nihil ducimus, magni minus quae ad. Fuga animi,
+      suscipit excepturi facere, accusamus autem sint, praesentium quis
+      dignissimos cupiditate consectetur libero eos dolor ab enim eligendi
+      corporis reiciendis! Vitae officia sed consequatur excepturi, recusandae
+      temporibus ullam quidem sequi explicabo placeat iste! Tenetur, aliquam est
+      facere nam aliquid enim! Ratione, nihil exercitationem? Iure sapiente non,
+      recusandae voluptatem illo odio vitae atque sequi, delectus libero,
+      ratione explicabo aliquid a similique qui harum? Consequuntur minus veniam
+      repellat soluta nobis ex, blanditiis fugit. Odit deserunt exercitationem,
+      tenetur assumenda nobis perspiciatis amet, tempora id doloremque corporis
+      itaque at labore consequatur. Fuga quia, harum libero beatae fugit atque a
+      ab, iusto sapiente optio recusandae temporibus culpa enim ratione sint!
+      Soluta ratione distinctio cumque aut voluptatem hic temporibus fugiat
+      obcaecati quos eum in, expedita porro blanditiis dolore
+    </p>
+
+    <!-- FOOTER section -->
+    <footer>
+      <div class="container">
+        <div class="footer__wrapper">
+          <!-- Column with Logo, description and media icons -->
+          <div class="footer__col-1">
+            <div class="footer__logo">
+              <img src="./images/logo.svg" alt="shaif's cuisine" />
+            </div>
+            <p class="footer__description">
+              Fresh and delicious traditional Bangladeshi food to delight the
+              whole family.
+            </p>
+            <div class="footer__socials">
+              <h4 class="footer__socials__title">Follow us</h4>
+              <!-- social icons (from feathericons.com -> GitHub repo -> folder 'icons' -> search 'facebook' -> click on facebook.svg -> code -> copy code) -->
+              <ol class="footer__socials__list">
+                <li>
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-facebook"
+                    >
+                      <path
+                        d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-instagram"
+                    >
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                      <path
+                        d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                      />
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-twitter"
+                    >
+                      <path
+                        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ol>
+            </div>
+          </div>
+          <!-- Column with Navigation Links -->
+          <div class="footer__col-2">
+            <h3 class="footer__text__title">Links</h3>
+            <ul class="footer__text">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./menu.html">Menu</a></li>
+              <li><a href="./booking.html">Book Table</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <!-- we don't have Privacy Policy page - it is just for demo purpose -->
+            </ul>
+          </div>
+          <!-- Column with Support -->
+          <div class="footer__col-3">
+            <h3 class="footer__text__title">Support</h3>
+            <ul class="footer__text">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Support Center</a></li>
+              <li><a href="#">Feedback</a></li>
+            </ul>
+          </div>
+          <!-- Column with Contacts -->
+          <div class="footer__col-4">
+            <h3 class="footer__text__title">Contact</h3>
+            <ul class="footer__text">
+              <li><p>+48 123 456 789</p></li>
+              <li><p>info@shaifscuisine.com</p></li>
+              <li><p>Piastowska 97, 80-252 Gdańsk</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER section -->
+
+    <!-- Copy right Line -->
+    <div id="copyright">
+      <div class="container">
+        <p class="copyright__text">
+          © copyright 2021 Shaif’s Cuisine | All rights reserved
+        </p>
+      </div>
+    </div>
+    <!-- End Copy right Line -->
+
+    <!-- Scroll Animation Library - AOS - Animate On Scroll script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="./main.js"></script>
+  </body>
+</html>
