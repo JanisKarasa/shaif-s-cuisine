@@ -31,6 +31,8 @@ RALEWAY -> 400 + 500 + 600
 
 html {
   /* 10px as a counterpoint because i will use 'rem' and 'em' and it will be much easier to calculate */
+  /* the rem unit is only relative to the document's root element, while the em unit is only relative to the immediate parent of the targeted element. 
+  This means that em sizes are inherited from parent elements, while rem sizes are inherited only from the root element. */
   font-size: 10px;
   /* we don't want our horizontal scrollbar because we will add Mobile Menu etc. witch will go outside viewport(viewable screen) if scrollbar is enabled and we don't want that */
   overflow-x: hidden;
