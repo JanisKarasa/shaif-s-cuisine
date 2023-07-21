@@ -145,7 +145,7 @@ And for that we use components.css file
   padding: 1.2rem 2rem;
 }
 
-.primary-btn {
+.btn-primary {
   color: var(--white-1);
   background-color: var(--green-1);
 }

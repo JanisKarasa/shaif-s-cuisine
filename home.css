@@ -1,0 +1,67 @@
+/* HOME Page Styles */
+/* This file will contains only Home Page Styles */
+/* !!! Link this file in our Home Page Head section */
+
+/* MOBILE VIEW */
+.hero__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  gap: 5rem;
+}
+
+.hero__left__wrapper {
+  max-width: 360px;
+  text-align: center;
+}
+
+.hero__right__wrapper {
+  max-width: 400px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hero__heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.4em;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--black-1);
+}
+
+.hero__text {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: var(--black-2);
+}
+
+/* DESKTOP VIEW */
+@media only screen and (min-width: 768px) {
+  .hero__wrapper {
+    flex-direction: row;
+    gap: 0;
+  }
+  .hero__left {
+    flex: 3;
+  }
+  .hero__right {
+    flex: 4;
+  }
+  .hero__left__wrapper {
+    text-align: left;
+  }
+  .hero__heading {
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
+  }
+  .hero__text {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;;
+  }
+  .hero__right__wrapper {
+    max-width: none;
+    width: 90%;
+  }
+}
