@@ -56,11 +56,11 @@ AOS.init({
   duration: 400,
   easing: "ease",
   // once - false means that animation will not happen once but as many times as we scroll back and forth
-  once: "false",
+  once: false,
   mirror: false,
   // anchorPlacement means when/where the animation starts - whenever elements 'top' and the viewpoint 'bottom' (screen bottom) will meet then the animation will start.
   anchorPlacement: "top-bottom",
 });
-// !!! NOW ADD SOME ATTRIBUTES in HERO SECTION:
+// !!! NOW ADD SOME ATTRIBUTES to respective elements in HERO SECTION:
 // next to 'hero__left' class we add 'data-aos="fade-left"'
 // next to 'hero__right' class we add 'data-aos="fade-right"'

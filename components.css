@@ -250,7 +250,8 @@ footer {
     font-size: 2rem;
     margin-bottom: 2rem;
   }
-  .footer__text a, p {
+  .footer__text a,
+  .footer__text p {
     font-size: 1.8rem;
     margin-bottom: 1rem;
   }
@@ -272,5 +273,68 @@ footer {
   .copyright__text {
     font-size: 1.6rem;
     text-align: left;
+  }
+}
+
+/* 5. STORE INFO STYLES */
+
+/* MOBILE view */
+.store__info__wrapper {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.store__info__item {
+  background-color: var(--lightGreen-1);
+  padding: 20px 30px;
+  text-align: center;
+  border-radius: 12px;
+  width: 150px;
+}
+
+.store__info__icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  margin-bottom: 1.4rem;
+}
+
+.store__info__title {
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--black-1);
+}
+
+.store__info__text {
+  font-size: 1.4rem;
+  font-family: 'Raleway', sans-serif;
+  color: var(--black-2);
+}
+
+/* DESKTOP VIEW */
+@media only screen and (min-width: 768px) {
+  .store__info__wrapper {
+    gap: 2rem;
+  }
+  .store__info__item {
+    min-width: 200px;
+    padding: 40px 0;
+  }
+  .store__info__icon {
+    width: 47px;
+    height: 47px;
+    margin-bottom: 2.4rem;
+  }
+  .store__info__title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .store__info__text {
+    font-size: 1.6rem;
   }
 }
