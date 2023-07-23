@@ -60,10 +60,147 @@
   }
   .hero__text {
     font-size: 1.8rem;
-    margin-bottom: 2rem;;
+    margin-bottom: 2rem;
   }
   .hero__right__wrapper {
     max-width: none;
     width: 90%;
+  }
+}
+
+/* OUR SPECIALS Styles */
+
+/* MOBILE view */
+#specials {
+  padding-top: 10rem;
+}
+
+.specials__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.specials__left {
+  display: flex;
+  gap: 1rem;
+}
+
+.specials__item {
+  background-color: var(--lightGreen-1);
+  padding: 1.2rem;
+  /* padding-top - 5rem as we will have negative margin to push picture out of specials__item element that is why we need more padding on the top */
+  padding-top: 5rem;
+  border-radius: 12px;
+  width: 45%;
+  margin: 0 auto;
+}
+
+.specials__item__picture {
+  /* calc(-50% -2rem) this is how much we need to calculate that negative margin to push picture out */
+  margin-top: calc(-50% - 2rem);
+  margin-bottom: 2rem;
+  height: 150px;
+  /* hiding a scrollbar */
+  overflow: hidden;
+}
+
+.specials__item__picture img {
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.specials__item__title {
+  font-size: 1.4rem;
+  color: var(--black-1);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.specials__item__price {
+  color: var(--green-1);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.specials__item__stars {
+  height: 1.5rem;
+  width: max-content;
+  margin-bottom: 1rem;
+}
+
+.specials__item__text {
+  font-size: 1.4rem;
+  color: var(--black-2);
+  font-weight: 500;
+}
+
+.specials__title {
+  font-size: 1.8rem;
+  color: var(--black-1);
+  margin-bottom: 1.5rem;
+}
+
+.specials__text {
+  font-size: 1.4rem;
+  color: var(--black-2);
+  margin-bottom: 1rem;
+}
+/* making .specials__left items to wrap on smaller screens */
+@media only screen and (max-width: 300px) {
+  .specials__left {
+    flex-wrap: wrap;
+    gap: 10rem;
+  }
+  .specials__item {
+    width: 100%;
+  }
+}
+
+/* DESKTOP view */
+@media only screen and (min-width: 768px) {
+  #specials {
+    padding-top: 15rem;
+  }
+  #specials .container {
+    /* will keep .container smaller here than default container in global styles file */
+    max-width: 900px;
+  }
+  .specials__wrapper {
+    flex-direction: row;
+  }
+  .specials__right {
+    flex: 2;
+  }
+  .specials__left {
+    flex: 4;
+    gap: 2rem;
+  }
+  .specials__item {
+    padding: 2rem;
+  }
+  .specials__item__title {
+    font-size: 2.4rem;
+    line-height: 1.4em;
+    margin-bottom: 1.5rem;
+  }
+  .specials__item__price {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .specials__item__stars {
+    margin-bottom: 2rem;
+  }
+  .specials__item__text {
+    font-size: 1.6rem;
+  }
+  .specials__title {
+    font-size: 3.6rem;
+    margin-bottom: 1.5rem;
+  }
+  .specials__text {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
   }
 }
