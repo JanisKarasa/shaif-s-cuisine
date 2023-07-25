@@ -126,6 +126,7 @@
 
 .specials__item__stars {
   height: 1.5rem;
+  /* The max-content sizing keyword represents the intrinsic maximum width or height of the content. For text content this means that the content will not wrap at all even if it causes overflows */
   width: max-content;
   margin-bottom: 1rem;
 }

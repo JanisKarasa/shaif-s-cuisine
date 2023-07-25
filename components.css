@@ -312,7 +312,7 @@ footer {
 
 .store__info__text {
   font-size: 1.4rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: var(--black-2);
 }
 
@@ -336,5 +336,88 @@ footer {
   }
   .store__info__text {
     font-size: 1.6rem;
+  }
+}
+
+/* 6. TOP DISHES Styles */
+
+/* MOBILE view */
+.top__dishes__title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: var(--black-1);
+}
+
+.top__dishes__wrapper {
+  display: grid;
+  /* grid-template-columns will create a responsiveness like flex-wrap */
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.top__dishes__item {
+  display: flex;
+  /* putting top__dishes__info section underneath the image */
+  flex-direction: column;
+  background-color: var(--lightGreen-1);
+  padding: 0.5rem;
+  gap: 0.5rem;
+  border-radius: 12px;
+}
+
+.top__dishes__item__img img {
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.top__dishes__item__title {
+  font-size: 1.4rem;
+  line-height: 1.3em;
+  font-weight: 500;
+  color: var(--black-1);
+  margin-bottom: 0.5rem;
+}
+
+.top__dishes__item__price {
+  font-size: 1.4rem;
+  color: var(--green-1);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.top__dishes__item__stars {
+  max-height: 15px;
+  /* The max-content sizing keyword represents the intrinsic maximum width or height of the content. For text content this means that the content will not wrap at all even if it causes overflows */
+  width: max-content;
+}
+
+/* DESKTOP view */
+@media only screen and (min-width: 768px) {
+  .top__dishes__title {
+    font-size: 2.4rem;
+  }
+  .top__dishes__wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+  }
+  .top__dishes__item {
+    flex-direction: row;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+  .top__dishes__item__img {
+    flex: 4;
+  }
+  .top__dishes__item__info {
+    flex: 5;
+  }
+  .top__dishes__item__title {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+  .top__dishes__item__price {
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
 }
