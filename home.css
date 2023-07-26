@@ -205,3 +205,123 @@
     margin-bottom: 1.5rem;
   }
 }
+
+/* DISCOUNT Section */
+
+/* MOBILE view */
+.discount__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 12px;
+  /* putting a small illustration on the bottom-right corner with the size of 100px*/
+  background: var(--lightGreen-1) url(./images/discount-illustration.png)
+    no-repeat bottom right / 100px;
+}
+
+.discount__images {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+/* giving images different space in parent container */
+.discount__img_1 {
+  flex: 2;
+}
+.discount__img_2 {
+  flex: 3;
+}
+/* whenever we give 'object-fit: cover' to images the image will cover/fit in all the area of the parent container 'discount__images' */
+/* if you give 'object-fit: cover' - then it will show the whole picture but will not cover all the area of the parent container */
+.discount__images img {
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.discount__info__percent {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--green-1);
+  margin-bottom: 0.5rem;
+}
+
+.discount__info__title {
+  font-size: 1.8rem;
+  color: var(--black-1);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.discount__info__price {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.discount__info__oldPrice {
+  color: var(--black-2);
+  text-decoration: line-through;
+}
+
+.discount__info__newPrice {
+  color: var(--green-1);
+}
+
+.discount__info__stars {
+  max-width: max-content;
+  height: 15px;
+  margin-bottom: 1rem;
+}
+
+/* DESKTOP view */
+
+@media only screen and (min-width: 768px) {
+  .discount__wrapper {
+    flex-direction: row;
+    gap: 4rem;
+    padding: 2rem;
+    align-items: center;
+    /* make an illustration a bit bigger */
+    background-size: 150px;
+  }
+  .discount__images {
+    flex: 5;
+    margin-bottom: 0;
+    gap: 2rem;
+  }
+  .discount__img_1,
+  .discount__img_2,
+  .discount__img_3 {
+    flex: 1;
+    height: 350px;
+  }
+  .discount__info {
+    flex: 3;
+  }
+  .discount__info__percent {
+    font-size: 2.4rem;
+  }
+  .discount__info__title {
+    font-size: 3.6rem;
+    margin-bottom: 1.5rem;
+  }
+  .discount__info__price {
+    font-size: 2.4rem;
+  }
+  .discount__info__stars {
+    height: 20px;
+    max-width: max-content;
+    margin-bottom: 2rem;
+  }
+}
+
+/* for small devices we show 2 images instead of 3 */
+@media only screen and (max-width: 1000px) {
+  .discount__wrapper {
+    gap: 2rem;
+  }
+  .discount__img_3 {
+    display: none;
+  }
+}
