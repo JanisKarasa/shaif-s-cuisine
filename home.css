@@ -325,3 +325,53 @@
     display: none;
   }
 }
+
+/* EVENTS MEDIA Section Styles */
+
+/* MOBILE view */
+.event__media__wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.event__media__video__wrapper {
+  position: relative;
+  flex: 2;
+}
+
+.event__media__video {
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
+.event__media__video img {
+  object-fit: cover;
+}
+
+.event__media__play__icon {
+  display: inline-block;
+  max-width: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.event__media__picture {
+  flex: 1;
+}
+
+.event__media__picture img {
+  object-fit: cover;
+}
+
+/* DESKTOP view */
+@media only screen and (min-width: 768px) {
+  .event__media__wrapper {
+    gap: 2rem;
+  }
+  .event__media__play__icon {
+    max-width: 100px;
+  }
+}
