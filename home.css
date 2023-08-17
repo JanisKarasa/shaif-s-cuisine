@@ -476,3 +476,88 @@
     max-width: 500px;
   }
 }
+
+/* CHOOSE OUR FOOD Section Styles */
+
+/* MOBILE view */
+.our__food__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  margin: 0 auto;
+}
+
+.our__food__left {
+  text-align: center;
+}
+
+.our__food__title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--black-1);
+  margin-bottom: 1rem;
+}
+
+.our__food__text {
+  font-size: 1.4rem;
+}
+
+.our__food__items__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.our__food__item {
+  background-color: var(--lightGreen-1);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.our__food__item__icon {
+  max-width: 56px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.our__food__item__text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--black-1);
+}
+
+/* DESKTOP VIEW */
+@media only screen and (min-width: 768px) {
+  .our__food__wrapper {
+    flex-direction: row;
+    max-width: 900px;
+    gap: 4rem;
+  }
+  .our__food__left {
+    text-align: left;
+    flex: 5;
+  }
+  .our__food__title {
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
+  }
+  .our__food__text {
+    font-size: 1.8rem;
+  }
+  .our__food__right {
+    flex: 4;
+  }
+  .our__food__items__wrapper {
+    gap: 1.5rem;
+  }
+  .our__food__item__icon {
+    max-width: 65px;
+    margin-bottom: 1.5rem;
+  }
+  .our__food__item__text {
+    font-size: 1.8rem;
+  }
+}
