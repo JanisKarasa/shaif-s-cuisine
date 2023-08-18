@@ -404,6 +404,7 @@
 }
 
 .corp__events__img img {
+  object-fit: cover;
   border-radius: 12px;
 }
 
@@ -606,8 +607,8 @@
 
 .testimonial__item__name {
   font-size: 1.4rem;
-  font-family: poppins;
   margin-bottom: 1rem;
+  color: var(--black-1);
 }
 
 .testimonial__item__stars {
