@@ -649,3 +649,10 @@
     line-height: 1.4em;
   }
 }
+
+/* EXTRA SMALLER DEVICE view */
+@media only screen and (max-width: 350px) {
+  .testimonial__item {
+    flex-direction: column;
+  }
+}
