@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./globalStyles.css" />
     <link rel="stylesheet" href="./components.css" />
+    <link rel="stylesheet" href="menu.css" />
     <!-- Scroll Animation Library - AOS - Animate On Scroll (https://michalsnik.github.io/aos/) -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
@@ -78,7 +79,313 @@
     </div>
     <!-- End NAV Section -->
 
-    <h1>This is Menu page</h1>
+    <!-- PAGE TITLE Section -->
+    <section id="page__title" data-aos="fade-up">
+      <div class="container">
+        <h1 class="page__title__text">Explore Our Menu</h1>
+      </div>
+    </section>
+    <!-- End PAGE TITLE Section -->
+
+    <!-- OUR SPECIALS Section -->
+    <section id="our__specials" data-aos="fade-up">
+      <div class="container">
+        <h1 class="our__specials__title">Our Specials</h1>
+        <div class="our__specials__wrapper">
+          <div class="our__specials__item">
+            <div class="our__specials__item__img">
+              <img src="./images/food-3.png" alt="food" />
+            </div>
+            <div class="our__specials__item__info">
+              <h3 class="our__specials__item__title">
+                Sweet Potato Fries Bowl
+              </h3>
+              <h4 class="our__specials__item__price">$12</h4>
+              <div class="our__specials__item__stars">
+                <img src="./images/4star.png" alt="4 stars" />
+              </div>
+            </div>
+          </div>
+          <div class="our__specials__item">
+            <div class="our__specials__item__img">
+              <img src="./images/food-1.png" alt="food" />
+            </div>
+            <div class="our__specials__item__info">
+              <h3 class="our__specials__item__title">Vegan Salad Bowl</h3>
+              <h4 class="our__specials__item__price">$13</h4>
+              <div class="our__specials__item__stars">
+                <img src="./images/4star.png" alt="4 stars" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End OUR SPECIALS Section -->
+
+    <!-- TOP DISHES Section -->
+    <!-- This section we copy from index.html and change AOS to fade down and styles are taken from components.css
+    and padding-bottom styles from menu.css -->
+    <section id="top__dishes" data-aos="fade-down">
+      <div class="container">
+        <h2 class="top__dishes__title">Top Dishes</h2>
+        <div class="top__dishes__wrapper">
+          <div class="top__dishes__item">
+            <div class="top__dishes__item__img">
+              <img src="./images/food-1.png" alt="food image" />
+            </div>
+            <div class="top__dishes__item__info">
+              <h3 class="top__dishes__item__title">Vegan Salad Bowl</h3>
+              <h3 class="top__dishes__item__price">$13</h3>
+              <div class="top__dishes__item__stars">
+                <img src="./images/4star.png" alt="4 stars" />
+              </div>
+            </div>
+          </div>
+          <div class="top__dishes__item">
+            <div class="top__dishes__item__img">
+              <img src="./images/food-2.png" alt="food image" />
+            </div>
+            <div class="top__dishes__item__info">
+              <h3 class="top__dishes__item__title">Vegan Pesto Zoodles</h3>
+              <h3 class="top__dishes__item__price">$13</h3>
+              <div class="top__dishes__item__stars">
+                <img src="./images/4star.png" alt="4 stars" />
+              </div>
+            </div>
+          </div>
+          <div class="top__dishes__item">
+            <div class="top__dishes__item__img">
+              <img src="./images/food-7.png" alt="food image" />
+            </div>
+            <div class="top__dishes__item__info">
+              <h3 class="top__dishes__item__title">Hot Green Bowl</h3>
+              <h3 class="top__dishes__item__price">$13</h3>
+              <div class="top__dishes__item__stars">
+                <img src="./images/4star.png" alt="4 stars" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End TOP DISHES Section -->
+
+    <!-- BREAKFAST Section -->
+    <!-- This section we duplicated from TOP DISHES (above) and changed title to "Breakfast",
+    duplicated items to have 5 of them, and styles are taken from components.css and padding-bottom styles from menu.css -->
+    <section id="top__dishes" data-aos="fade-up">
+      <div class="container">
+        <h2 class="top__dishes__title">Breakfast</h2>
+        <div class="top__dishes__wrapper">
+          <div class="top__dishes__item">
+            <div class="top__dishes__item__img">
+              <img src="./images/food-1.png" alt="food image" />
+            </div>
+            <div class="top__dishes__item__info">
+              <h3 class="top__dishes__item__title">Vegan Salad Bowl</h3>
+              <h3 class="top__dishes__item__price">$13</h3>
+              <div class="top__dishes__item__stars">
+                <img src="./images/4star.png" alt="4 stars" />
+              </div>
+            </div>
+          </div>
+          <div class="top__dishes__item">
+            <div class="top__dishes__item__img">
+              <img src="./images/food-2.png" alt="food image" />
+            </div>
+            <div class="top__dishes__item__info">
+              <h3 class="top__dishes__item__title">Vegan Pesto Zoodles</h3>
+              <h3 class="top__dishes__item__price">$13</h3>
+              <div class="top__dishes__item__stars">
+                <img src="./images/4star.png" alt="4 stars" />
+              </div>
+            </div>
+          </div>
+          <div class="top__dishes__item">
+            <div class="top__dishes__item__img">
+              <img src="./images/food-7.png" alt="food image" />
+            </div>
+            <div class="top__dishes__item__info">
+              <h3 class="top__dishes__item__title">Hot Green Bowl</h3>
+              <h3 class="top__dishes__item__price">$13</h3>
+              <div class="top__dishes__item__stars">
+                <img src="./images/4star.png" alt="4 stars" />
+              </div>
+            </div>
+          </div>
+          <div class="top__dishes__item">
+            <div class="top__dishes__item__img">
+              <img src="./images/food-1.png" alt="food image" />
+            </div>
+            <div class="top__dishes__item__info">
+              <h3 class="top__dishes__item__title">Vegan Salad Bowl</h3>
+              <h3 class="top__dishes__item__price">$13</h3>
+              <div class="top__dishes__item__stars">
+                <img src="./images/4star.png" alt="4 stars" />
+              </div>
+            </div>
+          </div>
+          <div class="top__dishes__item">
+            <div class="top__dishes__item__img">
+              <img src="./images/food-2.png" alt="food image" />
+            </div>
+            <div class="top__dishes__item__info">
+              <h3 class="top__dishes__item__title">Vegan Pesto Zoodles</h3>
+              <h3 class="top__dishes__item__price">$13</h3>
+              <div class="top__dishes__item__stars">
+                <img src="./images/4star.png" alt="4 stars" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End BREAKFAST Section -->
+
+    <!-- LUNCH Section -->
+    <!-- This section we duplicated from BREAKFAST (above) and changed title to "Lunch",
+    and styles are taken from components.css and padding-bottom styles from menu.css -->
+    <section id="top__dishes" data-aos="fade-up">
+      <div class="container">
+        <h2 class="top__dishes__title">Lunch</h2>
+        <div class="top__dishes__wrapper">
+          <div class="top__dishes__item">
+            <div class="top__dishes__item__img">
+              <img src="./images/food-1.png" alt="food image" />
+            </div>
+            <div class="top__dishes__item__info">
+              <h3 class="top__dishes__item__title">Vegan Salad Bowl</h3>
+              <h3 class="top__dishes__item__price">$13</h3>
+              <div class="top__dishes__item__stars">
+                <img src="./images/4star.png" alt="4 stars" />
+              </div>
+            </div>
+          </div>
+          <div class="top__dishes__item">
+            <div class="top__dishes__item__img">
+              <img src="./images/food-2.png" alt="food image" />
+            </div>
+            <div class="top__dishes__item__info">
+              <h3 class="top__dishes__item__title">Vegan Pesto Zoodles</h3>
+              <h3 class="top__dishes__item__price">$13</h3>
+              <div class="top__dishes__item__stars">
+                <img src="./images/4star.png" alt="4 stars" />
+              </div>
+            </div>
+          </div>
+          <div class="top__dishes__item">
+            <div class="top__dishes__item__img">
+              <img src="./images/food-7.png" alt="food image" />
+            </div>
+            <div class="top__dishes__item__info">
+              <h3 class="top__dishes__item__title">Hot Green Bowl</h3>
+              <h3 class="top__dishes__item__price">$13</h3>
+              <div class="top__dishes__item__stars">
+                <img src="./images/4star.png" alt="4 stars" />
+              </div>
+            </div>
+          </div>
+          <div class="top__dishes__item">
+            <div class="top__dishes__item__img">
+              <img src="./images/food-1.png" alt="food image" />
+            </div>
+            <div class="top__dishes__item__info">
+              <h3 class="top__dishes__item__title">Vegan Salad Bowl</h3>
+              <h3 class="top__dishes__item__price">$13</h3>
+              <div class="top__dishes__item__stars">
+                <img src="./images/4star.png" alt="4 stars" />
+              </div>
+            </div>
+          </div>
+          <div class="top__dishes__item">
+            <div class="top__dishes__item__img">
+              <img src="./images/food-2.png" alt="food image" />
+            </div>
+            <div class="top__dishes__item__info">
+              <h3 class="top__dishes__item__title">Vegan Pesto Zoodles</h3>
+              <h3 class="top__dishes__item__price">$13</h3>
+              <div class="top__dishes__item__stars">
+                <img src="./images/4star.png" alt="4 stars" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End LUNCH Section -->
+
+    <!-- DINNER Section -->
+    <!-- This section we duplicated from BREAKFAST (above) and changed title to "Dinner",
+    and styles are taken from components.css and padding-bottom styles from menu.css -->
+    <section id="top__dishes" data-aos="fade-up">
+      <div class="container">
+        <h2 class="top__dishes__title">Dinner</h2>
+        <div class="top__dishes__wrapper">
+          <div class="top__dishes__item">
+            <div class="top__dishes__item__img">
+              <img src="./images/food-1.png" alt="food image" />
+            </div>
+            <div class="top__dishes__item__info">
+              <h3 class="top__dishes__item__title">Vegan Salad Bowl</h3>
+              <h3 class="top__dishes__item__price">$13</h3>
+              <div class="top__dishes__item__stars">
+                <img src="./images/4star.png" alt="4 stars" />
+              </div>
+            </div>
+          </div>
+          <div class="top__dishes__item">
+            <div class="top__dishes__item__img">
+              <img src="./images/food-2.png" alt="food image" />
+            </div>
+            <div class="top__dishes__item__info">
+              <h3 class="top__dishes__item__title">Vegan Pesto Zoodles</h3>
+              <h3 class="top__dishes__item__price">$13</h3>
+              <div class="top__dishes__item__stars">
+                <img src="./images/4star.png" alt="4 stars" />
+              </div>
+            </div>
+          </div>
+          <div class="top__dishes__item">
+            <div class="top__dishes__item__img">
+              <img src="./images/food-7.png" alt="food image" />
+            </div>
+            <div class="top__dishes__item__info">
+              <h3 class="top__dishes__item__title">Hot Green Bowl</h3>
+              <h3 class="top__dishes__item__price">$13</h3>
+              <div class="top__dishes__item__stars">
+                <img src="./images/4star.png" alt="4 stars" />
+              </div>
+            </div>
+          </div>
+          <div class="top__dishes__item">
+            <div class="top__dishes__item__img">
+              <img src="./images/food-1.png" alt="food image" />
+            </div>
+            <div class="top__dishes__item__info">
+              <h3 class="top__dishes__item__title">Vegan Salad Bowl</h3>
+              <h3 class="top__dishes__item__price">$13</h3>
+              <div class="top__dishes__item__stars">
+                <img src="./images/4star.png" alt="4 stars" />
+              </div>
+            </div>
+          </div>
+          <div class="top__dishes__item">
+            <div class="top__dishes__item__img">
+              <img src="./images/food-2.png" alt="food image" />
+            </div>
+            <div class="top__dishes__item__info">
+              <h3 class="top__dishes__item__title">Vegan Pesto Zoodles</h3>
+              <h3 class="top__dishes__item__price">$13</h3>
+              <div class="top__dishes__item__stars">
+                <img src="./images/4star.png" alt="4 stars" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End DINNER Section -->
 
     <!-- FOOTER section -->
     <footer>

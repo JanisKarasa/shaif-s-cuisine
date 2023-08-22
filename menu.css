@@ -1,0 +1,126 @@
+/* PAGE TITLE Section styles */
+
+/* MOBILE view */
+#page__title {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.page__title__text {
+  font-size: 2.2rem;
+  color: var(--black-1);
+}
+
+/* DESKTOP view */
+@media only screen and (min-width: 768px) {
+  #page__title {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+  .page__title__text {
+    font-size: 3.6rem;
+  }
+}
+
+/* OUR SPECIALS Section styles */
+
+/* MOBILE view */
+#our__specials {
+  padding: 0;
+}
+
+.our__specials__title {
+  font-size: 1.8rem;
+  color: var(--black-1);
+  margin-bottom: 2rem;
+}
+
+.our__specials__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 400px;
+}
+
+.our__specials__item {
+  display: flex;
+  background-color: var(--lightGreen-1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  gap: 2rem;
+}
+
+.our__specials__item__info,
+.our__specials__item__img {
+  flex: 1;
+}
+
+.our__specials__item__img {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.our__specials__item__img img {
+  object-fit: cover;
+}
+
+.our__specials__item__title {
+  font-size: 2.4rem;
+  color: var(--black-1);
+  line-height: 1.2em;
+  margin-bottom: 1rem;
+}
+
+.our__specials__item__price {
+  font-size: 1.8rem;
+  color: var(--green-1);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.our__specials__item__stars {
+  width: max-content;
+}
+
+/* DESKTOP view */
+@media only screen and (min-width: 768px) {
+  .our__specials__title {
+    font-size: 2.4rem;
+  }
+  .our__specials__wrapper {
+    flex-direction: row;
+    max-width: none;
+    gap: 2rem;
+  }
+  .our__specials__item {
+    flex: 1;
+    padding: 3rem;
+  }
+  .our__specials__item__title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  .our__specials__item__price {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .our__specials__item__img {
+    flex: 4;
+  }
+  .our__specials__item__info {
+    flex: 3;
+  }
+}
+
+/* TOP DISH Styles */
+/* As we copied TOP DISH Section from index.html and duplicated to Breakfast, Lunch and Dinner,
+we fix padding-bottom here */
+#top__dishes {
+  padding-bottom: 0;
+}
+#top__dishes:last-of-type {
+  padding-bottom: 10rem;
+}
