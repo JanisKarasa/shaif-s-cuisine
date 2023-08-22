@@ -1,0 +1,114 @@
+/* OUR STORY Section styles */
+
+/* MOBILE view */
+.our__story__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.our__story__img {
+  margin-bottom: 2rem;
+}
+
+.our__story__title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--black-1);
+  margin-bottom: 1rem;
+}
+
+.our__story__subtitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--black-1);
+  margin-bottom: 2rem;
+}
+
+.our__story__text {
+  font-size: 1.4rem;
+  color: var(--black-1);
+  max-width: 800px;
+}
+
+/* DESKTOP view */
+@media only screen and (min-width: 768px) {
+  .our__story__wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+  .our__story__img,
+  .our__story__info {
+    flex: 1;
+  }
+  .our__story__title {
+    font-size: 3.6rem;
+  }
+  .our__story__subtitle {
+    font-size: 1.8rem;
+  }
+  .our__story__text {
+    font-size: 1.8rem;
+  }
+}
+
+/* OUR GOALS Section styles */
+
+/* MOBILE view */
+.our__goals__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.our__goals__title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--black-1);
+  margin-bottom: 1rem;
+}
+
+.our__goals__text {
+  font-size: 1.4rem;
+  color: var(--black-1);
+  max-width: 800px;
+}
+
+.our__goals__imgs__wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  /* creating layout with 2 columns */
+  grid-template-columns: 1fr 1fr;
+  /* creating layout with 2 rows */
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.our__goals__imgs__wrapper img {
+  /* making images to take/cover the whole space of the div */
+  object-fit: cover;
+}
+
+.our__goals__img1 {
+  /* making 1st image to take whole column */
+  grid-row: 1/3;
+  /* for the first img the row will start from 1 and it will go to the 3rd one */
+}
+
+/* DESKTOP view */
+@media only screen and (min-width: 768px) {
+  .our__goals__info {
+    text-align: center;
+  }
+  .our__goals__title {
+    font-size: 3.6rem;
+  }
+  .our__goals__text {
+    font-size: 1.8rem;
+    margin: 0 auto;
+  }
+  .our__goals__imgs__wrapper {
+    gap: 2rem;
+  }
+}
