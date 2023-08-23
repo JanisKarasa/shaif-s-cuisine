@@ -458,7 +458,8 @@ footer {
 }
 
 .contact__form__group input,
-textarea {
+textarea,
+select {
   font-size: 1.4rem;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -495,17 +496,19 @@ textarea {
     grid-template-columns: 1fr 1fr;
     /* grid-template-rows: 1fr 1fr; */
   }
+  .contact__form__group label,
   .contact__form__group input,
-  textarea {
-    margin-bottom: 0;
+  textarea,
+  select {
+    font-size: 1.8rem;
   }
   .contact__form__group label {
-    font-size: 1.8rem;
     margin-bottom: 1.6rem;
   }
-  .contact__form__group input {
+  .contact__form__group input,
+  textarea,
+  select {
     padding: 2rem;
-    font-size: 1.8rem;
   }
   /* we add this class to div that contains textarea element */
   .contact__form__group__full {
