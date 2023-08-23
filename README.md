@@ -13,7 +13,7 @@ There will be 5 pages in the website (HomePage, MenuPage, AboutPage, ContactPage
 ## What I learned:
 
 - HTML, CSS and a bit of JavaScript
-- CSS Grid
+- CSS Grid and Flexbox
 - Scroll Animation
 - Netlify Deployment
 - Netlify Form functionality
