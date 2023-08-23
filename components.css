@@ -421,3 +421,95 @@ footer {
     margin-bottom: 1rem;
   }
 }
+
+/* CONTACT FORM Section styles */
+
+/* MOBILE view */
+#contact__form {
+  padding: 5rem 0;
+}
+.contact__form__title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--black-1);
+}
+
+.contact__form__wrapper {
+  padding: 3rem 0;
+}
+
+.contact__form__wrapper form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.contact__form__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__form__group label {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--black-2);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.contact__form__group input,
+textarea {
+  font-size: 1.4rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: var(--black-2);
+  padding: 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--lightGreen-1);
+}
+
+.contact__form__group textarea {
+  /* making resizable just vertically */
+  resize: vertical;
+}
+
+.contact__form__wrapper button[type="submit"] {
+  width: max-content;
+  border: none;
+  padding: 1rem 4rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+/* DESKTOP view */
+@media only screen and (min-width: 768px) {
+  .contact__form__title {
+    font-size: 3.6rem;
+  }
+  .contact__form__wrapper {
+    padding: 5rem 0;
+  }
+  .contact__form__wrapper form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+  }
+  .contact__form__group input,
+  textarea {
+    margin-bottom: 0;
+  }
+  .contact__form__group label {
+    font-size: 1.8rem;
+    margin-bottom: 1.6rem;
+  }
+  .contact__form__group input {
+    padding: 2rem;
+    font-size: 1.8rem;
+  }
+  /* we add this class to div that contains textarea element */
+  .contact__form__group__full {
+    /* making textarea to take the whole row having a full width pushing button underneath */
+    grid-column: 1/3;
+  }
+}
