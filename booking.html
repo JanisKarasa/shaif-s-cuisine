@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Title of the home page -->
     <title>Booking | Shaif's Cuisine</title>
+    <!-- Linking Favicon -->
+    <link rel="icon" href="./images/favicon.ico" type="image/ico" />
     <!-- Linking CSS files -->
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./globalStyles.css" />
@@ -109,7 +111,14 @@
             </div>
             <div class="contact__form__group">
               <label for="guest_number">Number of Guests</label>
-              <input type="number" id="guest_number" name="Guest Number" min="1" max="10" required />
+              <input
+                type="number"
+                id="guest_number"
+                name="Guest Number"
+                min="1"
+                max="10"
+                required
+              />
             </div>
             <div class="contact__form__group">
               <label for="placement">Placement</label>
@@ -130,12 +139,7 @@
             </div>
             <div class="contact__form__group contact__form__group__full">
               <label for="note">Note</label>
-              <textarea
-                name="note"
-                id="note"
-                rows="4"
-                required
-              ></textarea>
+              <textarea name="note" id="note" rows="4" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Book Table</button>
             <!-- here we use component.css file to style the form because we will have 2 kind of forms:
